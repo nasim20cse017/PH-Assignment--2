@@ -614,9 +614,32 @@ img {
         justify-content: center;
     }
 
+    .footer {
+        padding: 40px 15px;
+        background-position: center top; 
+    }
+
+    .logo {
+        font-size: 2rem; 
+        margin-bottom: 25px;
+    }
+
     .footer-links {
-        flex-direction: column;
-        gap: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, auto); 
+        justify-content: center;
+        gap: 20px 25px; 
+    }
+
+    .social-link {
+        font-size: 15px;
+        justify-content: flex-start; 
+    }
+
+    .copyright p {
+        font-size: 12px;
+        margin: 0 auto;
+        line-height: 1.5;
     }
 
     
