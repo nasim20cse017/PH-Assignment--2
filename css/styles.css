@@ -551,9 +551,8 @@ img {
 
     .navbar{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        justify-items: center;
     }
     
     .nav-links, .desktop-btn {
@@ -562,6 +561,8 @@ img {
     
     .menu-icon {
         display: block; 
+        margin-right: 10px;
+        margin-bottom: 20px;
     }
 
 
@@ -572,7 +573,7 @@ img {
     
     .hero-buttons {
         display: flex;
-        flex-direction: column;
+        flex-direction: rows;
         gap: 15px;
         align-items: center;
     }
