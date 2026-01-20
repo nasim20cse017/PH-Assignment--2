@@ -238,6 +238,282 @@ img {
     letter-spacing: 1px;
 }
 
+/* ===========================
+   6. WHY CHOOSE SECTION
+   =========================== */
+.why-choose-section {
+    padding: 80px 20px;
+    background: #230E3D;          /* dark background like your original design */
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   /* 3 equal columns */
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Default card styling */
+.feature-card {
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 32px 28px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.icon-box img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    margin-bottom: 24px;
+}
+
+.feature-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #c0c0e0;
+    line-height: 1.6;
+}
+
+.features-grid {
+        grid-auto-rows: 260px;   /* base row height */
+    }
+
+    #card-1 {
+        grid-column: 1 / 2;      /* column 1 */
+        grid-row:    1 / 3;      /* spans 2 rows → tall card */
+    }
+
+    #card-1 img{
+        margin-top: 80px;
+    }
+
+    #card-2 {
+        grid-column: 2 / 4;      /* columns 2 + 3 */
+        grid-row:    1 / 2;
+    }
+
+    #card-3 {
+        grid-column: 2 / 4;      /* columns 2 + 3 */
+        grid-row:    2 / 3;
+    }
+
+    #card-4 {
+        grid-column: 1 / 3;      /* columns 1 + 2 */
+        grid-row:    3 / 4;
+    }
+
+    #card-5 {
+        grid-column: 3 / 4;      /* column 3 only */
+        grid-row:    3 / 4;
+    }
+
+
+
+/* ===========================
+   7. EPISODES SECTION
+   =========================== */
+.episodes-section {
+    padding: 80px 0;
+}
+
+.episodes-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.episode-card {
+    background: #1e1136;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 32%;
+}
+
+.video-thumbnail {
+    height: 180px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Placeholder backgrounds for thumbnails */
+.thumbnail-1 { background-image: url('episode1-bg.png'); background-color: #2a1b4e; }
+.thumbnail-2 { background-image: url('episode2-bg.png'); background-color: #1e1136; }
+.thumbnail-3 { background-image: url('episode3-bg.png'); background-color: #5500aa; }
+
+.play-button {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #ff00cc, #ff9900);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(255, 0, 204, 0.6);
+}
+
+.episode-info {
+    padding: 20px;
+}
+
+.episode-info h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.episode-info p {
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.meta {
+    display: flex;
+    align-items: center;
+    color: #00ffcc;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.small-icon {
+    width: 14px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* ===========================
+   8. HOST SECTION
+   =========================== */
+.host-section {
+    padding: 60px 0;
+}
+
+.host-card {
+    background: #18082e;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.host-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #2a1b4e;
+}
+
+.host-content h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.host-content p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* ===========================
+   9. FOOTER
+   =========================== */
+.footer {
+    position: relative;
+    padding: 80px 0 20px;
+    text-align: center;
+    background: #0f021f;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.footer-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url('footer-bg.png');
+    background-size: contain;
+    background-repeat: repeat-x;
+    opacity: 0.3;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.footer-icon {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.copyright {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    color: #666;
+    font-size: 12px;
+}
+
+/* ===========================
+   10. RESPONSIVE DESIGN
+   =========================== */
 
 
 @media (max-width: 1199px) {
@@ -271,12 +547,48 @@ img {
         margin-left: 0;
     }
     
+    /* About Stats */
     .stats-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px;
     }
 
-    
+    /* Why Choose */
+    .features-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    /* Episodes */
+    .episodes-grid {
+        flex-direction: column;
+    }
+
+    .episode-card {
+        width: 100%;
+    }
+
+    /* Host */
+    .host-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .host-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    /* Footer */
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
     
 }
