@@ -548,6 +548,13 @@ img {
 }
 
 @media screen and (max-width: 576px) {
+
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        justify-items: center;
+    }
     
     .nav-links, .desktop-btn {
         display: none; 
@@ -556,6 +563,8 @@ img {
     .menu-icon {
         display: block; 
     }
+
+
 
     .hero-content h1 {
         font-size: 32px;
